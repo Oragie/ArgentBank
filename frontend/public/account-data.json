@@ -5,7 +5,7 @@
 	  "title": "Argent Bank Checking",
 	  "amount": 2082.79,
 	  "description": "Available Balance",
-	  "userId": ["67c7352eb891884d709ab384"]
+	  "userId": ["67dd711f14ffaf5810a42dd9"]
 	},
 	{
 	  "id": "objectId0002",
@@ -13,7 +13,7 @@
 	  "title": "Argent Bank Savings",
 	  "amount": 10928.42,
 	  "description": "Available Balance",
-	  "userId": ["67c7352eb891884d709ab384"]
+	  "userId": ["67dd711f14ffaf5810a42dd9"]
 	},
 	{
 	  "id": "objectId0003",
@@ -21,7 +21,7 @@
 	  "title": "Argent Bank Credit Card",
 	  "amount": 184.30,
 	  "description": "Current Balance",
-	  "userId": ["67c7352eb891884d709ab384"]
+	  "userId": ["67dd711f14ffaf5810a42dd9"]
 	},
 	{
 	  "id": "objectId0004",
@@ -29,7 +29,7 @@
 	  "title": "Argent Bank Checking",
 	  "amount": 1570.79,
 	  "description": "Available Balance",
-	  "userId": ["67c7352eb891884d709ab385"]
+	  "userId": ["67dd711f14ffaf5810a42dda"]
 	},
 	{
 	  "id": "objectId0005",
@@ -37,7 +37,7 @@
 	  "title": "Argent Bank Savings",
 	  "amount": 8120.51,
 	  "description": "Available Balance",
-	  "userId": ["67c7352eb891884d709ab385"]
+	  "userId": ["67dd711f14ffaf5810a42dda"]
 	},
 	{
 	  "id": "objectId0006",
@@ -45,7 +45,7 @@
 	  "title": "Argent Bank Credit Card",
 	  "amount": 104.24,
 	  "description": "Current Balance",
-	  "userId": ["67c7352eb891884d709ab385"]
+	  "userId": ["67dd711f14ffaf5810a42dda"]
 	},
 
 

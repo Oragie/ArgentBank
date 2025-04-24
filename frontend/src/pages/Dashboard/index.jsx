@@ -1,7 +1,7 @@
 import "./dashboard.scss";
 import EditNameForm from "../../components/EditNameForm";
 import AccountCard from "../../components/AccountCard";
-import { getAccountData } from "../../api/user";
+import { getAccountData } from "./../../api/apiService";
 import { selectUser } from "../../state/selectors";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";

@@ -7,7 +7,7 @@ import {
   startLoadingProfile,
   setProfileSuccess,
   setProfileError,
-} from "../redux/slices/userSlice"; // Actions Redux pour la gestion du profil utilisateur
+} from "../redux/slices/apiserviceSlice"; // Actions Redux pour la gestion du profil utilisateur
 import { loginUser, getUserData } from "../redux/services/apiService"; // Import des services API pour l'authentification et récupération des données utilisateur
 import { useNavigate } from "react-router-dom"; // Hook pour la navigation
 import { useState } from "react"; // Importation du hook useState pour gérer l'état local

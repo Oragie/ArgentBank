@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchUserProfile } from "../state/userThunks";
+import { fetchUserProfile } from "../state/usersThunks";
 import useAuth from "./useAuth"; // Import du hook personnalisé
 
 // Hook personnalisé pour récupérer le profil utilisateur

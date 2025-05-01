@@ -8,9 +8,8 @@ import { useEffect, useState } from "react";
 
 function Dashboard() {
   const { id } = useSelector(selectUser); // l'id de l'utilisateur connecté
-  console.log({ id });
+
   const [userAccounts, setUserAccounts] = useState([]);
-  console.log("initacc", userAccounts);
 
   useEffect(() => {
     async function fetchData() {
@@ -21,7 +20,6 @@ function Dashboard() {
           (account) => account.userId[0] === id
         );
         setUserAccounts(filtered);
-        console.log("setacc", setUserAccounts);
       }
     }
 

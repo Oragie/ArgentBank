@@ -111,6 +111,7 @@ paths:
         '500':
           description: Internal Server Error
 
+
       #phase 2:
   /user/accounts:
     get:
@@ -132,9 +133,30 @@ paths:
         "200":
           description: User Accounts retrieved successfully
           schema:
-            $ref: "#/definitions/ApiResponse"
+            type: object
+            properties:
+              id:
+                type: string
+                description: ID of the account
+              amount:
+                type: number
+                format: float
+                description: Amount associated with the account
+              balance:
+                type: number
+                format: float
+                description: Current balance of the account
+              transactionType:
+                type: string
+                description: Type of the transaction
+              category:
+                type: string
+                description: Category of the transaction
+              notes:
+                type: string
+                description: Additional notes for the account
         "400":
-          description: invalid Fields
+          description: Invalid Fields
         "500":
           description: Internal Server Error
 
@@ -145,7 +167,7 @@ paths:
       tags:
         - Transaction Module
       summary: User Transactions API
-      description: API for fetching a user transactions
+      description: API for fetching a user's transactions
       parameters:
         - in: header
           type: string
@@ -174,7 +196,22 @@ paths:
         "200":
           description: Transactions retrieved successfully
           schema:
-            $ref: "#/definitions/ApiResponse"
+            type: object
+            properties:
+              id:
+                type: string
+              amount:
+                type: number
+                format: float
+              balance:
+                type: number
+                format: float
+              transactionType:
+                type: string
+              category:
+                type: string
+              notes:
+                type: string
         "400":
           description: Invalid fields
         "500":
@@ -222,15 +259,28 @@ paths:
         "200":
           description: Transaction updated successfully
           schema:
-            $ref: "#/definitions/TransactionResponse"
+            type: object
+            properties:
+              id:
+                type: string
+              amount:
+                type: number
+                format: float
+              balance:
+                type: number
+                format: float
+              transactionType:
+                type: string
+              category:
+                type: string
+              notes:
+                type: string
         "400":
           description: Invalid request parameters
         "401":
           description: Unauthorized - Missing or invalid token
         "500":
           description: Internal Server Error
-
-
 
 securityDefinitions:
   Bearer:
@@ -286,33 +336,6 @@ definitions:
         type: string
       lastName:
         type: string
-  UserTransactionsResponse:
-    type: object
-    properties:
-      status:
-        type: integer
-      message:
-        type: string
-      body:
-        type: object
-        properties:
-          transactions:
-            type: array
-            items:
-              $ref: "#/definitions/Transaction"
-
-  TransactionResponse:
-    type: object
-    properties:
-      status:
-        type: integer
-      message:
-        type: string
-      body:
-        type: object
-        properties:
-          transaction:
-            $ref: "#/definitions/Transaction"
 
   Account:
     type: object

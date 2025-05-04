@@ -12,18 +12,17 @@ function Dashboard() {
   const [userAccounts, setUserAccounts] = useState([]);
 
   useEffect(() => {
-    async function fetchData() {
+    async function fetchData(id) {
       const allAccounts = await getAccountData();
       if (allAccounts) {
-        console.log({ id, acc: allAccounts[0] });
         const filtered = allAccounts.filter(
           (account) => account.userId[0] === id
         );
         setUserAccounts(filtered);
       }
     }
-
-    fetchData();
+    console.log("id Test", id);
+    fetchData(id);
   }, [id]);
 
   return (

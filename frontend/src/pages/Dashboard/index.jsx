@@ -21,7 +21,7 @@ function Dashboard() {
         setUserAccounts(filtered);
       }
     }
-    console.log("id Test", id);
+
     fetchData(id);
   }, [id]);
 
